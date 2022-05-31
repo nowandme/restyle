@@ -14,7 +14,8 @@ const filterRestyleProps = <
   componentProps: TProps,
   omitPropertiesMap: Record<keyof TProps, boolean>,
 ) => {
-  const props = omitPropertiesMap.variant
+  // eslint-disable-next-line prettier/prettier
+  const props = omitPropertiesMap?.variant
     ? {variant: 'defaults', ...componentProps}
     : componentProps;
   return getKeys(props).reduce(
