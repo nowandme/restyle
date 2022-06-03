@@ -11,8 +11,7 @@
     "test": "exit 0",
     "lint": "eslint '**/*.{ts,tsx}' && yarn tsc --noEmit",
     "lint-fix": "eslint --fix '**/*.{ts,tsx}'",
-    "prepublishOnly": "yarn run build",
-    "prepare": "yarn build"
+    "prepublishOnly": "yarn run build"
   },
   "husky": {
     "hooks": {
