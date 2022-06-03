@@ -12,7 +12,7 @@
     "lint": "eslint '**/*.{ts,tsx}' && yarn tsc --noEmit",
     "lint-fix": "eslint --fix '**/*.{ts,tsx}'",
     "prepublishOnly": "yarn run build",
-    "postinstall": "yarn run build"
+    "postinstall": "yarn && yarn run build"
   },
   "husky": {
     "hooks": {
